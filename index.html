@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/style.css" />
+    <link rel="stylesheet" href="Assets/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,600&family=Outfit:wght@200;300;400;500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>ToDo</title>
+  </head>
+  <body>
+    <div class="todohead_img">
+      <img class="todohead_img_bitmap" src="Assets/Bitmap (2).png" />
+    </div>
+    <header class="todohead">
+      <div class="todohead_cont">
+        <h1>TODO</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+        >
+          <path
+            id="Combined Shape"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.3717 0.215831C10.5931 1.19962 7 5.4302 7 10.5C7 16.299 11.701 21 17.5 21C20.4958 21 23.1986 19.7454 25.1116 17.7328C23.2191 22.5722 18.5098 26 13 26C5.8203 26 0 20.1797 0 13C0 5.8203 5.8203 0 13 0C13.81 0 14.6027 0.0740788 15.3717 0.215831Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <form>
+        <div class="round">
+          <input type="checkbox" class="checkbox_input" />
+          <label for="checkbox"></label>
+        </div>
+        <input
+          type="text"
+          class="text_input"
+          placeholder="Create a new todo…"
+          name="newtodo"
+        />
+      </form>
+      <div class="container">
+        <ul class="all-todos">
+          <li>
+            <div class="round">
+              <input type="checkbox" class="checkbox_input"  onClick="checkbox_input(this)"/>
+              <label for="checkbox"></label>
+            </div>
+            <p>Wake up</p>
+          </li>
+          
+        </ul>
+      </div>
+    </header>
+    <script src="app.js"></script>
+  </body>
+</html>
